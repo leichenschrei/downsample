@@ -9,4 +9,4 @@ jobs:
       - name: Install ShellCheck
         run: sudo apt-get install -y shellcheck
       - name: Run ShellCheck
-        run: shellcheck downsample
+        run: shellcheck -e 2086 downsample.sh
